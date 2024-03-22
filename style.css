@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+footer p a {
+    color: rgb(255, 255, 255);
+}
+#icon {
+    margin-top: 1px;
+    width: 40px;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+    font-style: italic;
+    font-family: "Madimi One", sans-serif;
+}
+
+.display {
+    display: flex;
+    text-align: center;
+    color: #5a8f7b;
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#gameboard {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: black; */
+    border-radius: 5px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    margin: 0.5rem;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    background-color: orange;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.model {
+    margin-top: 200px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+.model.visible {
+    opacity: 0.9;
+    display: block;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content h1 {
+    font-size: 30px;
+}
+
+#restartGame {
+    outline: none;
+    border: none;
+    padding: 0.8rem 4rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-family: "Madimi One", sans-serif;
+    font-size: 1.2rem;
+    width: 250px;
+    cursor: pointer;
+    background-color: orange;
+    font-weight: 600;
+}
