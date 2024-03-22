@@ -1,6 +1,6 @@
 <h2>Tic-Tac-Toe Game</h2>
 
-<p> It's online for playing 🙂 <a href="https://magical-seahorse-032798.netlify.app/"> Link to Game </a>
+<p> It's available online to play 🙂 <a href="https://magical-seahorse-032798.netlify.app/"> Link to Game </a>
 
 
 <img width="949" alt="SCR-20240322-sfwm" src="https://github.com/JovanMilojkovic/Tic-Tac-Toe/assets/106410269/eb643785-7fab-464a-85fd-d51c5b4e7434">
