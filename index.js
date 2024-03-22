@@ -40,11 +40,11 @@ function startGame(boxes) {
 function boxClicked(box) {
     if (box.innerText === "") {
         updateGame(box);
-        boxClickedCounter++;
     }
 }
 
 function updateGame(box) {
+    boxClickedCounter++;
     box.innerText = currentPlayer;
     currentPlayer = currentPlayer === playerX ? playerO : playerX;
     box.style.color = currentPlayer === playerX ? "green" : "red";
@@ -98,7 +98,6 @@ function getRandomAiMove() {
     if (emptyBoxes.length > 0) {
         const randomIndex = Math.floor(Math.random() * emptyBoxes.length);
         updateGame(emptyBoxes[randomIndex]);
-        boxClickedCounter++;
 
         if (boxClickedCounter === 9 && !checkWinner()) {
             gameTied();
