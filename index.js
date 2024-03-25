@@ -79,6 +79,10 @@ function gameOver(player) {
 function displayMessage(message) {
     winnerText.innerHTML = `<h3 class="message">${message}</h3>`;
     winnerModel.classList.add("visible");
+    resetButton.classList.add("model-visible");
+    resetButton.disabled = true;
+    playerVsAiButton.classList.add("model-visible");
+    playerVsAiButton.disabled = true;
 }
 
 function resetGame() {
@@ -91,6 +95,10 @@ function resetGame() {
 function restartGame() {
     resetGame();
     winnerModel.classList.remove("visible");
+    resetButton.classList.remove("model-visible");
+    resetButton.disabled = false;
+    playerVsAiButton.classList.remove("model-visible");
+    playerVsAiButton.disabled = false;
 }
 
 function getRandomAiMove() {
