@@ -96,6 +96,10 @@ footer p a {
     cursor: pointer;
 }
 
+.controls button.model-visible {
+    cursor: not-allowed;
+}
+
 .model {
     margin-top: 200px;
     position: absolute;
